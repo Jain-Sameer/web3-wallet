@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react(), nodePolyfills()],
   build: {
     rollupOptions: {
-      external: ['vite-plugin-node-polyfills/shims/buffer']
+      external: ['vite-plugin-node-polyfills/shims/buffer', 'bip39']
     }
   }
 });
