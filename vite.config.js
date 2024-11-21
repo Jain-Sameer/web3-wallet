@@ -3,10 +3,13 @@ import react from '@vitejs/plugin-react';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
 
 export default defineConfig({
-  plugins: [react(), nodePolyfills()],
+  plugins: [
+    react(),
+    nodePolyfills()
+  ],
   build: {
     rollupOptions: {
-      external: ['vite-plugin-node-polyfills/shims/buffer', 'bip39']
-    }
-  }
+      external: [],
+    },
+  },
 });
